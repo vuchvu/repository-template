@@ -1,2 +1,7 @@
 _min_copier_version: "9.0"
 _answers_file: .copier-answers.yml
+
+project_name:
+  type: str
+  help: プロジェクト名
+  default: "{{ _copier_conf.dst_path.name }}"
