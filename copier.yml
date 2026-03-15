@@ -5,3 +5,9 @@ project_name:
   type: str
   help: プロジェクト名
   default: "{{ _copier_conf.dst_path.name }}"
+
+project_specific_agents:
+  type: str
+  multiline: true
+  default: ""
+  help: "AGENTS.mdのプロジェクト固有セクション（PRラベル・リリースフロー等）"
